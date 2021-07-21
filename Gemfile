@@ -32,6 +32,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'factory_bot_rails'
+  gem 'devise'
 end
 
 group :development do
