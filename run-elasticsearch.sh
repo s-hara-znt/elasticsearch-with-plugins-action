@@ -8,6 +8,8 @@ if [[ -z $STACK_VERSION ]]; then
   exit 1
 fi
 
+MAJOR_VERSION=`echo ${STACK_VERSION} | cut -c 1`
+
 PLUGIN_INSTALL_CMD=""
 PLUGINS_STR=`echo ${PLUGINS} | sed -e 's/\n/ /g'`
 if [ -n "${PLUGINS_STR}" ]; then
